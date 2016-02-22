@@ -106,7 +106,8 @@ function createGround (size = 10000, posY = -500, color = 0xffffff, specular = 0
 
 function createCube (size, texture, color = 0xbbbbbb, specular = 0x333333, shininess = 20) {
 
-    let geometry = new THREE.BoxGeometry(size, size, size);
+    //let geometry = new THREE.BoxGeometry(size, size, size);
+    let geometry = new THREE.TorusKnotGeometry( size, 0.3 * size, 100, 16 );
     let material = new THREE.MeshPhongMaterial({
               map: new THREE.TextureLoader().load(texture),
             color: color,

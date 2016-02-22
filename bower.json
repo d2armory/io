@@ -1,5 +1,5 @@
 {
-  "name": "threejs-boilerplate",
+  "name": "d2armory-io",
   "dependencies": {
     "three.js": "threejs#*",
     "stats.js": "*"
